@@ -1,5 +1,13 @@
 function verifyopenglrender(which_img)
 
+% This is how Pangolin camera matrix should be initialised for this to
+% work...
+%     pangolin::OpenGlRenderState s_cam(
+% //      ProjectionMatrixRDF_BottomLeft(640,480,520.9,521.0,325.1,249.7,0.1,1000),
+%       ProjectionMatrixRDF_BottomLeft(640,480,480.0,480.0,319.5,239.5,0.1,1000),
+%       ModelViewLookAt(3,3,3, 0,0,0, AxisNegZ)
+%     );
+
 poses = load('/home/ankur/workspace/code/kufrap/data/room_89_simple_data/room_89_simple_trajectory_random_poses_SE3_3x4.txt');
 
 opengldepth = imread(sprintf('/home/ankur/workspace/code/kufrap/data/room_89_simple_data/scenedepth_00_%04d.png',which_img));
