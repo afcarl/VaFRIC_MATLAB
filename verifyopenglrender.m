@@ -8,9 +8,9 @@ function verifyopenglrender(which_img)
 %       ModelViewLookAt(3,3,3, 0,0,0, AxisNegZ)
 %     );
 
-poses = load('/home/ankur/workspace/code/kufrap/data/room_89_simple_data/room_89_simple_trajectory_random_poses_SE3_3x4.txt');
+poses = load('/home/ankur/workspace/code/kufrap/data/bedroom_1_data/bedroom_1_trajectory_random_poses_SE3_3x4.txt');
 
-opengldepth = imread(sprintf('/home/ankur/workspace/code/kufrap/data/room_89_simple_data/scenedepth_00_%04d.png',which_img));
+opengldepth = imread(sprintf('/home/ankur/workspace/code/kufrap/data/bedroom_1_data/scenedepth_00_%04d.png',which_img));
 
 opengldepth = double(opengldepth)/50.0;
 
